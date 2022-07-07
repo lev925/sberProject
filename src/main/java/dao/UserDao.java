@@ -9,5 +9,4 @@ public interface UserDao {
 
     void insert(User user);
 
-    void insertAll(List<User> users);
 }

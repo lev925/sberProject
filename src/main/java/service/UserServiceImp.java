@@ -1,6 +1,6 @@
 package service;
 
-import dao.HiberUserDao;
+import dao.UserDaoImp;
 import dao.UserDao;
 import model.User;
 
@@ -9,17 +9,12 @@ import java.util.List;
 public class UserServiceImp implements UserService {
     UserDao dao;
     public UserServiceImp(){
-        this.dao = new HiberUserDao();
+        this.dao = new UserDaoImp();
     }
 
     @Override
     public List<User> getAll() {
         return dao.getAll();
-    }
-
-    @Override
-    public void insertAll(List<User> users) {
-        dao.insertAll(users);
     }
 
     @Override
