@@ -6,6 +6,6 @@ import jakarta.persistence.Persistence;
 public class ContentDaoImp {
     EntityManager entityManager;
     public ContentDaoImp(){
-        Persistence.createEntityManagerFactory("");
+        Persistence.createEntityManagerFactory("persistence.xml");
     }
 }

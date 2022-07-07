@@ -5,11 +5,10 @@
              version="2.1">
 <persistence-unit name="org.java.courses_h2">
 
-    <class>model.Car</class>
-    <class>model.ContactInfo</class>
-    <class>model.Discipline</class>
-    <class>model.Group</class>
-    <class>model.Student</class>
+    <class>model.Content</class>
+    <class>model.User</class>
+    <class>model.Target</class>
+    <class>model.Viewed</class>
     <properties>
         <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
 
@@ -17,7 +16,7 @@
         <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
         <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/postgres"/>
         <property name="hibernate.connection.username" value="postgres"/>
-        <property name="hibernate.connection.password" value="postgres"/>
+        <property name="hibernate.connection.password" value=""/>
         <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
         <property name="hibernate.show_sql" value="true"/>
     </properties>
