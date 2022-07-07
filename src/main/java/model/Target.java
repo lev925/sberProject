@@ -1,10 +1,7 @@
 package model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 import java.util.UUID;
@@ -13,7 +10,9 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode(of = {"guid"})
 @Entity
+@ToString(exclude = {"userGuid","contentGuid"})
 @Table(name = "target")
 public class Target {
     @Id
